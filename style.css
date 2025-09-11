@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    font-family: 'inter';
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --background: #FAFAF5;
+    --backgroundHeader: #62cd67;
+    --backgroundBlocos: #6eb471;
+    --fonteHeader: #C8E6C9;
+    --fonteGeral: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    background-color: var(--backgroundHeader);
+}
+
+header h1 {
+    color: var(--fonteHeader);
+    font-family: 'meow script';
+    text-align: center;
+}
+
+header nav {
+    position: relative;
+    left: 15%;
+}
+
+ul {
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    width: 20%;
+}
