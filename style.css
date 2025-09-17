@@ -10,9 +10,9 @@
 
 :root{
     --background: #FAFAF5;
-    --backgroundHeader: #62cd67;
-    --backgroundBlocos: #6eb471;
-    --fonteHeader: #C8E6C9;
+    --backgroundHeader: #54b158;
+    --backgroundBlocos: #79c07d;
+    --fonteHeader: #1e482d;
     --fonteGeral: #333333;
 }
 
@@ -21,34 +21,85 @@ body {
     flex-direction: column;
     height: 100vh;
     font-size: 20px;
+    gap: 5%;
 }
 
+
+
 header{
+    height: 25%;
     display: flex;
     align-items: center;
-    gap: 5%;
     background-color: var(--backgroundHeader);
+    gap: 3%;
+    color: var(--fonteHeader);
+    font-weight: bold;
+}
+
+header img {
+    width: 13%;
+    height: 100%;
 }
 
 header h1 {
     color: var(--fonteHeader);
-    font-family: 'meow script';
     text-align: center;
 }
 
 header nav {
+    font-size: 1.5em;
     position: relative;
-    left: 15%;
+    width: 70%;
 }
 
 ul {
-    width: 40%;
+    width: 100%;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-header img {
-    width: 20%;
+.secao div img {
+    width: 50%;
+    height: auto;
+}
+
+.secao div p {
+    width: 50%;
+}
+
+.secao p {
+    border-radius: 10px;
+    font-size: 1.3em;
+    color: var(--fonteGeral);
+    background-color: var(--backgroundBlocos);
+}
+
+.secao h1 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundHeader);
+    color: var(--fonteHeader);
+}
+
+.secao div {
+    display: flex;
+    width: 100%;
+    height: 30%;
 }
